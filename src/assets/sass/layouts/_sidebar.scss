@@ -1,32 +1,28 @@
 .sidebar {
-  background: orangered;
-  width: 30rem;
-  min-height: 100dvh;
+  background: rgba($tertiary-colour, 0.65);
+  width: 35rem;
+  max-height: 100dvh;
   height: 100%;
   display: flex;
   flex-flow: column;
+  top: 0;
+  position: sticky;
 
   &__title {
     align-content: center;
-    min-height: 20dvh;
+    min-height: 10rem;
+    height: 20dvh;
   }
 
   &__navList {
     display: flex;
-    background: yellowgreen;
     flex-flow: column;
     align-items: center;
     flex-grow: 1;
-
-    &--nav {
-      height: 10rem;
-      align-content: center;
-    }
   }
 
   &__setting {
     display: flex;
-    height: 5dvh;
     align-items: center;
     justify-content: center;
   }

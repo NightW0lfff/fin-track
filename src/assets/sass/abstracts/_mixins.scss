@@ -1,0 +1,9 @@
+@mixin box-shadow(
+  $h-offset: 1rem,
+  $v-offset: 1rem,
+  $blur-radius: 1.2rem,
+  $spread-radius: 0.2rem,
+  $color: rgba(#000, 0.2)
+) {
+  box-shadow: $h-offset $v-offset $blur-radius $spread-radius $color;
+}

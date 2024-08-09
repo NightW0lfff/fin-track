@@ -14,11 +14,14 @@
 @import "layouts/footer";
 @import "layouts/grid";
 @import "layouts/sidebar";
+@import "layouts/_root";
+@import "layouts/content";
 
 // Import components
 @import "components/buttons";
 @import "components/cards";
 @import "components/forms";
+@import "components/nav";
 
 // Import pages
 @import "pages/about";

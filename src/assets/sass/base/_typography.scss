@@ -2,6 +2,7 @@ html {
   font-size: 62.5%; //10px
   color: $font-colour;
   font-family: "Roboto", "Open Sans", "sans-serif";
+  letter-spacing: 0.05rem;
 }
 
 .sidebar {
@@ -9,11 +10,36 @@ html {
     font-size: 3.5rem;
     text-align: center;
   }
+}
 
-  &__navList,
-  &__setting {
-    &--nav {
-      font-size: 2rem;
+.nav {
+  font-size: 1.8rem;
+}
+
+.content {
+  font-size: 1.6rem;
+
+  &__header {
+    &--title {
+      font-size: 4.6rem;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+    }
+
+    &--overview {
+    }
+  }
+
+  &__visualisedInfo {
+    &--detailSummary {
+      &-title {
+        font-size: 2.8rem;
+        font-weight: 600;
+      }
+
+      &-uptodate {
+        font-size: 1.8rem;
+      }
     }
   }
 }
