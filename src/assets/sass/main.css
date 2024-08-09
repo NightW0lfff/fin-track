@@ -7,7 +7,6 @@
 html,
 body {
   line-height: 100%;
-  font-size: 16px;
 }
 
 ul,
@@ -15,9 +14,48 @@ ol {
   list-style: none;
 }
 
-* {
+html {
+  font-size: 62.5%;
   color: #333;
   font-family: "Roboto", "Open Sans", "sans-serif";
+}
+
+.sidebar__title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.sidebar__navList--nav, .sidebar__setting--nav {
+  font-size: 2rem;
+}
+
+.sidebar {
+  background: orangered;
+  width: 30rem;
+  min-height: 100dvh;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.sidebar__title {
+  align-content: center;
+  min-height: 20dvh;
+}
+.sidebar__navList {
+  display: flex;
+  background: yellowgreen;
+  flex-flow: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.sidebar__navList--nav {
+  height: 10rem;
+  align-content: center;
+}
+.sidebar__setting {
+  display: flex;
+  height: 5dvh;
+  align-items: center;
+  justify-content: center;
 }
 
 :root {

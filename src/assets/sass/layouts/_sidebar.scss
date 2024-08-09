@@ -1,0 +1,33 @@
+.sidebar {
+  background: orangered;
+  width: 30rem;
+  min-height: 100dvh;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+
+  &__title {
+    align-content: center;
+    min-height: 20dvh;
+  }
+
+  &__navList {
+    display: flex;
+    background: yellowgreen;
+    flex-flow: column;
+    align-items: center;
+    flex-grow: 1;
+
+    &--nav {
+      height: 10rem;
+      align-content: center;
+    }
+  }
+
+  &__setting {
+    display: flex;
+    height: 5dvh;
+    align-items: center;
+    justify-content: center;
+  }
+}

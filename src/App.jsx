@@ -1,7 +1,9 @@
+import _root from "./components/_root";
+
 function App() {
   return (
     <>
-      <h1>Test</h1>
+      <_root />
     </>
   );
 }

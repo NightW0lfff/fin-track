@@ -1,4 +1,19 @@
-* {
+html {
+  font-size: 62.5%; //10px
   color: $font-colour;
   font-family: "Roboto", "Open Sans", "sans-serif";
+}
+
+.sidebar {
+  &__title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  &__navList,
+  &__setting {
+    &--nav {
+      font-size: 2rem;
+    }
+  }
 }
