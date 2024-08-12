@@ -1,9 +1,9 @@
-import _root from "./components/_root";
+import OverviewContent from "./components/layout/content/OverviewContent";
 
 function App() {
   return (
     <>
-      <_root />
+      <OverviewContent />
     </>
   );
 }

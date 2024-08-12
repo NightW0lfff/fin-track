@@ -9,45 +9,86 @@ import {
   BarElement,
   BarController,
 } from "chart.js";
-import { color } from "chart.js/helpers";
 
 ChartJS.register(Title, Tooltip, Legend, scales, BarElement, BarController);
 
 const options = {
   responsive: true,
   scales: {
+    // display: false,
     y: {
+      // reverse: true,
+      max: 100,
+      display: "auto",
+      ticks: {
+        display: false,
+      },
+      grid: {
+        display: false,
+      },
       title: {
-        display: true,
+        display: false,
         text: "Y Title",
         align: "center",
         padding: { bottom: 20 },
       },
     },
+    x: {
+      grid: {
+        drawTicks: false,
+      },
+      title: {
+        display: false,
+        text: data[0].datasets[0].startDate,
+        align: "center",
+        padding: { top: 20 },
+        font: {
+          size: 20,
+        },
+      },
+    },
   },
+  // animation: {
+  //   duration: 1500,
+  //   loop: true,
+  //   // easing: "easeInOutCube",
+  // },
   plugins: {
     datalabels: {
-      display: true,
+      display: false,
       color: "#fff",
       anchor: "end",
       align: "start",
       // formatter: (value) => `${value}`,
     },
     legend: {
+      display: false,
       position: "right",
     },
     title: {
-      display: true,
+      display: false,
       text: "Overview",
       font: {
         size: 25,
       },
     },
+    tooltip: {
+      enabled: false,
+    },
   },
 };
 
 const OverviewChart = () => (
-  <div style={{ width: "100%", height: "35rem", justifyContent: "center" }}>
+  <div
+    className="chart__overview"
+    // style={{
+    //   display: "flex",
+    //   width: "100%",
+    //   height: "35rem",
+    //   justifyContent: "center",
+    //   alignItems: "center",
+    // }}
+  >
     <Bar data={data[0]} options={options} />
   </div>
 );
