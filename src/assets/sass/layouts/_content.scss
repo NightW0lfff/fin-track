@@ -18,46 +18,13 @@
     border-bottom: $black 1px solid;
     min-height: 8rem;
     align-items: center;
-    padding: 0 1.6rem;
+    padding: 0 2.5rem;
   }
 
-  &__visualisedInfo {
+  &__container {
+    margin: 0 3rem;
     display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
-
-    &--chart {
-      width: 60%;
-      padding: 2rem 3rem;
-      border-radius: 1.5rem;
-      background: rgba($tertiary-colour, 0.65);
-      @include box-shadow;
-    }
-
-    &--detailSummary {
-      width: 30%;
-      background: rgba($tertiary-colour, 0.65);
-      padding: 2rem;
-      border-radius: 1.5rem;
-      @include box-shadow;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-
-      &-title {
-        height: 5rem;
-        width: 90%;
-        text-align: center;
-        align-content: center;
-        border-bottom: 1px $black solid;
-      }
-
-      &-uptodate {
-        flex-grow: 2;
-        width: 100%;
-        padding: 2rem 0;
-        text-align: center;
-      }
-    }
+    flex-flow: column;
+    gap: 2rem;
   }
 }

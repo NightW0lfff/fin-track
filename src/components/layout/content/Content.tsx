@@ -1,16 +1,16 @@
 import React, { ReactNode } from "react";
 
-type Props = {
-  children: ReactNode;
-};
+interface Props {
+  title: string;
+  children?: React.ReactNode;
+}
 
-function Content({ children }: Props) {
+function Content({ title, children }: Props) {
   return (
     <div className="content">
       <div className="content__layout">
         <div className="content__header">
-          <div className="content__header--title">Title</div>
-          <div className="content__header--overview">Overview</div>
+          <div className="content__header--title">{title}</div>
         </div>
         <div className="content__container">{children}</div>
       </div>

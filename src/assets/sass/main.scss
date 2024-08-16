@@ -14,7 +14,7 @@
 @import "layouts/footer";
 @import "layouts/grid";
 @import "layouts/sidebar";
-@import "layouts/_root";
+@import "layouts/mainLayout";
 @import "layouts/content";
 
 // Import components
@@ -25,7 +25,7 @@
 @import "components/chart";
 
 // Import pages
-@import "pages/about";
+@import "pages/overview";
 @import "pages/contact";
 @import "pages/home";
 

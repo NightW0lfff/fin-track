@@ -1,4 +1,4 @@
-import data from "../../../assets/data";
+import data from "../../../assets/data/data";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -13,7 +13,7 @@ import {
 ChartJS.register(Title, Tooltip, Legend, scales, BarElement, BarController);
 
 const options = {
-  responsive: true,
+  responsive: "auto",
   scales: {
     // display: false,
     y: {
@@ -79,16 +79,7 @@ const options = {
 };
 
 const OverviewChart = () => (
-  <div
-    className="chart__overview"
-    // style={{
-    //   display: "flex",
-    //   width: "100%",
-    //   height: "35rem",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    // }}
-  >
+  <div className="chart chart__overview">
     <Bar data={data[0]} options={options} />
   </div>
 );

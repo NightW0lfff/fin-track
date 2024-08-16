@@ -1,4 +1,4 @@
-import data from "../../../assets/data";
+import data from "../../../assets/data/data";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Doughnut } from "react-chartjs-2";
 import {
@@ -13,7 +13,7 @@ import {
 ChartJS.register(Title, Tooltip, Legend, scales, ArcElement, ChartDataLabels);
 
 const options = {
-  responsive: true,
+  responsive: "auto",
   // animation: {
   //   duration: 1500,
   //   loop: true,
@@ -39,7 +39,7 @@ const options = {
 
 function SummaryChart() {
   return (
-    <div style={{ width: "80%", height: "80%" }}>
+    <div className="chart chart__summary">
       <Doughnut data={data[1]} options={options} />
     </div>
   );

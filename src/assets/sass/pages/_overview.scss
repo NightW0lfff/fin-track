@@ -1,0 +1,60 @@
+.overview {
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+
+    &--chart {
+      width: 100%;
+    }
+
+    &--overview {
+      width: 60%;
+    }
+
+    &--detailedSummary {
+      width: 30%;
+      // background: rgba($tertiary-colour, 0.65);
+      // padding: 2rem;
+      // border-radius: 1.5rem;
+      // @include box-shadow;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      &-title {
+        height: 5rem;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        border-bottom: 1px $black solid;
+      }
+
+      &-uptodate {
+        flex-grow: 2;
+        width: 100%;
+        padding: 2rem 0;
+        text-align: center;
+      }
+    }
+  }
+
+  &__updates {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+
+    &--title {
+      padding: 2rem;
+      border-bottom: 0.1rem $black solid;
+    }
+
+    &--container {
+      min-height: 30rem;
+    }
+
+    &--item {
+      height: 100%;
+    }
+  }
+}

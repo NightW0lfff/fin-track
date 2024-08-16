@@ -1,4 +1,4 @@
-import Nav from "../nav/nav";
+import Nav from "../nav/Nav";
 
 function Sidebar() {
   return (
