@@ -51,6 +51,16 @@ html {
   font-size: 2.8rem;
 }
 
+.ListMenu__heading--content {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.listItem__item {
+  text-align: center;
+}
+
 .sidebar {
   background: rgba(249, 247, 247, 0.65);
   width: 30rem;
@@ -140,6 +150,48 @@ html {
 .chart__summary {
   width: 80%;
   height: auto;
+}
+
+.ListMenu {
+  width: 100%;
+  height: 40rem;
+  border: 0.1rem solid #000;
+  border-radius: 1rem;
+  background-color: rgba(63, 114, 175, 0.15);
+}
+.ListMenu__heading--container {
+  display: flex;
+  border-bottom: 0.1rem solid black;
+  padding: 0 2rem;
+  background-color: rgba(63, 114, 175, 0.5);
+  border-radius: 1rem 1rem 0 0;
+}
+.ListMenu__heading--content {
+  width: 100%;
+  margin: 2rem;
+}
+.ListMenu__heading--content:not(:first-child) {
+  border-left: 0.1rem solid #000;
+}
+
+.listItem {
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  flex-flow: column;
+  gap: 1.5rem;
+  height: 85%;
+  overflow: auto;
+}
+.listItem__container {
+  display: flex;
+  border: 0.1rem solid #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+}
+.listItem__item {
+  width: 100%;
+  padding: 1.5rem;
 }
 
 .overview__summary {

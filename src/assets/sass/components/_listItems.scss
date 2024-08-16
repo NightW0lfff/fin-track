@@ -1,0 +1,26 @@
+.listItem {
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  // margin: 1rem 0;
+  flex-flow: column;
+  gap: 1.5rem;
+  height: 85%;
+  overflow: auto;
+  // @include inset-box-shadow;
+
+  &__container {
+    display: flex;
+    border: 0.1rem solid $black;
+    background-color: rgba($white, 0.7);
+    border-radius: 1rem;
+  }
+
+  &__item {
+    width: 100%;
+    padding: 1.5rem;
+
+    // border: 0.1rem solid $black;
+    // flex-grow: 2;
+  }
+}

@@ -1,7 +1,6 @@
-import OverviewChart from "../components/shared/charts/OverviewChart";
-import SummaryChart from "../components/shared/charts/SummaryChart";
+import { OverviewChart, SummaryChart } from "../components/_root";
 import data from "../assets/data/data";
-import List from "../components/shared/list/MenuList";
+import ListMenu from "../components/shared/list/ListMenu";
 import MainLayout from "../components/layout/MainLayout";
 
 function Overview() {
@@ -26,7 +25,7 @@ function Overview() {
         <h3 className="overview__updates--title">Recent Updates</h3>
         <div className="overview__updates--container">
           <div className="overview__updates--item">
-            <List />
+            <ListMenu type={"t"} />
           </div>
         </div>
       </div>

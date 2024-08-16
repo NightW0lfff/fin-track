@@ -49,3 +49,19 @@ html {
     }
   }
 }
+
+.ListMenu {
+  &__heading {
+    &--content {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.listItem {
+  &__item {
+    text-align: center;
+  }
+}

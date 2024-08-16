@@ -7,3 +7,13 @@
 ) {
   box-shadow: $h-offset $v-offset $blur-radius $spread-radius $color;
 }
+
+@mixin inset-box-shadow(
+  $h-offset: 0rem,
+  $v-offset: 0rem,
+  $blur-radius: 1rem,
+  $spread-radius: 0.1rem,
+  $color: rgba(#000, 0.1)
+) {
+  box-shadow: inset $h-offset $v-offset $blur-radius $spread-radius $color;
+}
