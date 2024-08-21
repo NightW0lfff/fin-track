@@ -10,7 +10,12 @@
     "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"]
+      "baseUrl": ["./src"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],

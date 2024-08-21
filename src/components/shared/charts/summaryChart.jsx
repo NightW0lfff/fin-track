@@ -14,14 +14,14 @@ ChartJS.register(Title, Tooltip, Legend, scales, ArcElement, ChartDataLabels);
 
 const options = {
   responsive: "auto",
-  // animation: {
-  //   duration: 1500,
-  //   loop: true,
-  //   // easing: "linear",
-  // },
+  animation: {
+    duration: 1500,
+    loop: false,
+    // easing: "linear",
+  },
   plugins: {
     datalabels: {
-      display: false, // Set to true to display labels
+      display: true, // Set to true to display labels
       color: "#fff", // Text color
       // anchor: "end", // Positioning relative to the arc
       align: "center", // Aligns the text inside the arc
@@ -29,10 +29,10 @@ const options = {
     },
     legend: {
       position: "bottom",
-      display: false,
+      display: true,
     },
     tooltip: {
-      enabled: false,
+      enabled: true, //false
     },
   },
 };

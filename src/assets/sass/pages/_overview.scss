@@ -13,7 +13,7 @@
     }
 
     &--detailedSummary {
-      width: 30%;
+      width: 35%;
       // background: rgba($tertiary-colour, 0.65);
       // padding: 2rem;
       // border-radius: 1.5rem;
@@ -21,6 +21,8 @@
       display: flex;
       flex-flow: column;
       align-items: center;
+      gap: 2rem;
+      // justify-content: space-between;
 
       &-title {
         height: 5rem;

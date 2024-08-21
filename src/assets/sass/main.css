@@ -206,10 +206,11 @@ html {
   width: 60%;
 }
 .overview__summary--detailedSummary {
-  width: 30%;
+  width: 35%;
   display: flex;
   flex-flow: column;
   align-items: center;
+  gap: 2rem;
 }
 .overview__summary--detailedSummary-title {
   height: 5rem;
@@ -238,6 +239,23 @@ html {
 }
 .overview__updates--item {
   height: 100%;
+}
+
+.test {
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 :root {

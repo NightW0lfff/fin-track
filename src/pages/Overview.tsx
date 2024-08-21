@@ -1,5 +1,6 @@
+import React from "react";
 import { OverviewChart, SummaryChart } from "../components/_root";
-import data from "../assets/data/data";
+// import data from "../assets/data/data";
 import ListMenu from "../components/shared/list/ListMenu";
 import MainLayout from "../components/layout/MainLayout";
 
@@ -14,9 +15,9 @@ function Overview() {
           <div className="overview__summary--detailedSummary-title">
             Summary
           </div>
-          <div className="overview__summary--detailedSummary-uptodate">
+          {/* <div className="overview__summary--detailedSummary-uptodate">
             {data[1].datasets[0].startDate} - now
-          </div>
+          </div> */}
           <SummaryChart />
         </div>
       </div>

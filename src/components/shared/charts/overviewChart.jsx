@@ -15,16 +15,16 @@ ChartJS.register(Title, Tooltip, Legend, scales, BarElement, BarController);
 const options = {
   responsive: "auto",
   scales: {
-    // display: false,
+    display: true, //false
     y: {
       // reverse: true,
       max: 100,
       display: "auto",
       ticks: {
-        display: false,
+        display: true, //false
       },
       grid: {
-        display: false,
+        display: true, //false
       },
       title: {
         display: false,
@@ -48,14 +48,14 @@ const options = {
       },
     },
   },
-  // animation: {
-  //   duration: 1500,
-  //   loop: true,
-  //   // easing: "easeInOutCube",
-  // },
+  animation: {
+    duration: 1500,
+    loop: false,
+    // easing: "easeInOutCube",
+  },
   plugins: {
     datalabels: {
-      display: false,
+      display: true, //false
       color: "#fff",
       anchor: "end",
       align: "start",
@@ -73,7 +73,7 @@ const options = {
       },
     },
     tooltip: {
-      enabled: false,
+      enabled: true, //false
     },
   },
 };
